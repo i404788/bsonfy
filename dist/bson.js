@@ -447,7 +447,7 @@ var BSON;
                     return undefined;
             }
             if (name_1 === '__v')
-                return object;
+                return object[name_1];
         }
         return object;
     }

@@ -500,8 +500,9 @@ export namespace BSON {
           // Parsing error: Unknown element
           return undefined;
       }
+
       if (name === '__v')
-        return object;
+        return object[name];
     }
     return object;
   }
