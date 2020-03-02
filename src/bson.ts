@@ -187,6 +187,8 @@ export namespace BSON {
    * @return {Uint8Array} An byte array with the BSON representation
    */
   export function serialize(object: any): Uint8Array {
+    if (!((object.constructor as any) in [Object, Array]))
+      object = {'__v': object}
     let buffer = new Uint8Array(getObjectSize(object));
     serializeEx(object, buffer);
     return buffer;
@@ -498,6 +500,8 @@ export namespace BSON {
           // Parsing error: Unknown element
           return undefined;
       }
+      if (name === '__v')
+        return object;
     }
     return object;
   }
