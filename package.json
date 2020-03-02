@@ -1,8 +1,9 @@
 {
-  "name": "bsonfy",
-  "version": "1.0.2",
+  "name": "@ferrisk/bsonfy",
+  "version": "1.0.3",
   "author": "Marco Paland",
   "license": "MIT",
+  "private": false,
   "description": "Ultrafast BSON serializer/parser",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,14 +15,14 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "typescript": "latest",
-    "lite-server": "latest",
-    "ts-node": "^4.1.0",
-    "chai": "^4.1.2",
-    "mocha": "^5.0.0",
     "@types/chai": "^4.1.2",
     "@types/mocha": "^2.2.47",
-    "@types/node": "^9.4.0"
+    "@types/node": "^9.4.0",
+    "chai": "^4.1.2",
+    "lite-server": "latest",
+    "mocha": "^5.0.0",
+    "ts-node": "^4.1.0",
+    "typescript": "latest"
   },
   "repository": {
     "type": "git",
@@ -38,5 +39,8 @@
   "bugs": {
     "url": "https://github.com/mpaland/bsonfy/issues"
   },
-  "homepage": "https://github.com/mpaland/bsonfy#readme"
+  "homepage": "https://github.com/mpaland/bsonfy#readme",
+  "directories": {
+    "test": "test"
+  }
 }
