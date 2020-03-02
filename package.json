@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mpaland/bsonfy.git"
+    "url": "git+https://github.com/i404788/bsonfy.git"
   },
   "keywords": [
     "BSON",
@@ -37,9 +37,9 @@
     "Typescript"
   ],
   "bugs": {
-    "url": "https://github.com/mpaland/bsonfy/issues"
+    "url": "https://github.com/i404788/bsonfy/issues"
   },
-  "homepage": "https://github.com/mpaland/bsonfy#readme",
+  "homepage": "https://github.com/i404788/bsonfy#readme",
   "directories": {
     "test": "test"
   }
